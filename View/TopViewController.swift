@@ -8,8 +8,13 @@
 
 import UIKit
 
-public final class TopViewController: UIViewController {
+class TopViewController: UIViewController {
+        
+    @IBOutlet weak var TopTextArea1: UITextField!
     
+    @IBAction func TopButton1(_ sender: Any) {
+        TopTextArea1.text = "hoge"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +24,4 @@ public final class TopViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
-
